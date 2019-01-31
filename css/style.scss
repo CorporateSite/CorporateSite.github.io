@@ -1,0 +1,177 @@
+/*             ---MAIN VARIABLE---              */
+
+ $grey-color: #282828;
+ $darkGrey-color: #d5d4d2;
+ $white-color: #fff;
+ $red-color: #ff6d6d;
+ $black-color: #282828;
+ $main-font: 'Exo', sans-serif;
+
+ /*             ---MIXIN---              */
+
+@mixin fd-r {
+  display: flex;
+  flex-direction: row;
+}
+@mixin fd-c {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*MAIN*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; 
+}
+
+body{
+	color: $grey-color;
+  font-family: 'Exo', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+ul,ol{
+	list-style: none;
+}
+
+  a{
+  	text-decoration: none;
+  }
+
+ 
+
+
+ /*             ---CONTAINER---              */
+
+ .container{
+ 	width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+ 
+
+/*             ---header---              */
+
+.header{
+  background: url(../img/header_bg.png) center bottom no-repeat;
+  background-size: 100%;
+}
+.header_content{
+  padding-top: 13%;
+  padding-bottom: 13%;
+  @include fd-c;
+  justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
+  .header_h1{
+    padding-bottom: 60px;
+    color: $black-color;
+    font-size: 60px;
+    text-align: center;
+  }
+  .red_button{
+    padding: 10px 46px;
+    border-radius: 4px;
+    border: 1px solid $red-color;
+    background-color: $red-color;
+    &:hover{
+      border: 1px solid $black-color;
+      background-color: $white-color;
+      color: $black-color;
+    }
+   }
+   .header_try{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $white-color;
+   }
+}
+
+/*             ---newDesign---              */
+.newDesign{
+  background: url(../img/design_img.png) top right no-repeat;
+  
+}
+.newDesign_content{
+    padding: 120px 0;
+    @include fd-c;
+    width: 50%;
+    .newDesign_text-h5{
+      font-size: 16px;
+      color: $red-color;
+    }
+    .newDesign-h1{
+      padding-top: 20px;
+      padding-bottom: 40px;
+      font-size: 40px;
+    }
+    .newDesign-p{
+      padding: 10px 0;
+      font-size: 16px;
+    }
+}
+
+/*             ---features---              */
+
+.features{
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background: url(../img/Features.png) top no-repeat;
+  background-size: 100%;
+}
+.feature_tittle{
+  padding-bottom: 110px;
+  @include fd-c;
+  align-items: center;
+  .feature_tittle-h5{
+    color: $red-color;
+    font-size: 16px;
+  }
+  .feature_tittle-h1{
+    padding-top: 20px;
+    color: $black-color;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+.feature_card{
+  @include fd-r;
+  justify-content: space-around;
+  .feature_card_item{
+    padding: 0 15px;
+    @include fd-c;
+    align-items: center;
+    text-align: center;
+    .feature_card_item-h2{
+      padding-top: 20px;
+      color: $black-color;
+      font-size: 20px;
+    }
+    .feature_card_item-span{
+      padding-top: 20px;
+      color: #323232;
+      font-size: 16px;
+    }
+  }
+}

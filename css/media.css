@@ -1,0 +1,69 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1560px) {
+  .header_content {
+    padding-top: 10%; } }
+@media only screen and (max-width: 1440px) {
+  .newDesign {
+    background-color: #ececec; }
+
+  .features {
+    background-size: auto; } }
+@media only screen and (max-width: 1200px) {
+  .header_content {
+    padding-top: 5%;
+    padding-bottom: 10%; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .header {
+    background-size: auto; }
+
+  .newDesign_content {
+    align-items: center;
+    width: 100%; }
+    .newDesign_content .newDesign_text-h5, .newDesign_content .newDesign-h1, .newDesign_content .newDesign-p {
+      display: flex;
+      max-width: 50%; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .newDesign_content {
+    padding: 60px 0; }
+    .newDesign_content .newDesign-h1 {
+      font-size: 35px; }
+    .newDesign_content .newDesign_text-h5, .newDesign_content .newDesign-h1, .newDesign_content .newDesign-p {
+      display: flex;
+      max-width: 90%; }
+
+  .features {
+    background-color: #f6f5f3; }
+
+  .feature_tittle {
+    padding-bottom: 35px; }
+
+  .feature_card {
+    display: flex;
+    flex-direction: column; }
+    .feature_card .feature_card_item {
+      padding-top: 75px; }
+      .feature_card .feature_card_item .feature_card_item-span {
+        max-width: 60%; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header_content .header_h1 {
+    font-size: 40px;
+    padding-bottom: 30px; } }
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .header_content .header_h1 {
+    font-size: 30px; }
+
+  .newDesign_content .newDesign-h1 {
+    font-size: 25px; } }
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+
+/*# sourceMappingURL=media.css.map */
